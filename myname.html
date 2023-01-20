@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin:0;
+    }
+    body{
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: #b6b6b6;
+        color: rgb(29, 0, 0);
+        margin: 20px 30px;
+        text-align: center;
+        word-spacing: 3px;
+        line-height: 30px;
+    }
+    img{
+        width: 140px;
+        height: 140px;
+        border-radius: 5rem;
+        box-shadow: 0px 1px 4px red;
+        animation: spin 2s infinite;  
+
+    }
+    img:hover{
+        transform: scale(2);
+        margin-top: 20px;
+        padding: 2px; 
+    } 
+    .contacts p{
+        display: inline-block;
+        vertical-align: middle;
+        padding: 10px;
+    }
+    .contacts img{
+        display: inline;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        /* animation: spin 2s infinite;    */
+        /* margin: 2px 70px ; */
+        /* text-align: left; */
+    }
+    @keyframes spin {
+        0% {
+        transform: rotate(0deg) scale(0.8);
+        }
+        5% {
+            transform: rotate(0deg) scale(0.9);
+        }
+        10% {
+            transform: rotate(0deg) scale(0.8);
+        }
+        15% {
+            transform: rotate(0deg) scale(1);
+        }
+        50% {
+            transform: rotate(0deg) scale(0.8);
+        }
+        100% {
+            transform: rotate(0deg) scale(0.8);
+        }
+        }      
+        
+    a{
+        color: #8C070d;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #191919;
+    }
+    /* section ul{
+        width: unset;
+        margin-right: 3rem;
+    } */
+    .ul-container{
+        display: inline-block;
+        text-align: left;
+    }
+    .ul-flex{
+        column-count: 2;
+        column-gap: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    section{
+        padding: 10px;
+    }
+    fieldset{
+        margin: 0 30px;
+        border-style: none;
+    }
+    hr{
+        /* max-width: 100%; */
+        vertical-align: middle;
+        /* margin: 10px auto; */      
+    }
+    h3{
+        padding-bottom: 10px;
+        font-size: 22px;
+    }
+    p,li{
+        font-size: 17px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    a:hover{
+        transform: height 10px 2s, width 20px 2s;
+    }
+    /* tangalin ko muna animation d kaya mag render sa hosting ni github */
+        
+</style>
+<body>
+    <!-- taas mb img d makarender mabilis -->
+    <img src="/1x1photoroom.png" alt="michael jan image">
+    <section class="contacts">
+    <h1>Michael Jan T. Ramos</h1>
+    <!-- saka na magawa yung sa media queries -->
+    <img src="/resume/emaillogo.png" alt="email-logo">
+    <p><a href="mailto:michaeljantramos@gmail.com">michaeljantramos@gmail.com</a></p>
+    <img src="/resume/calllogo.png" alt="cellphone-logo">
+    <p>09212475739</p>
+    <img src="/resume/gitlogo.png" alt="github-logo">
+    <p><a href="https://github.com/MchlJn">https://github.com/MchlJn</a></p>
+    </section>
+    <hr>
+    <fieldset>
+    <section>
+    <h3>Profile</h3>
+    <p>Hi, I am a fresh graduate who has experience as an Administrative clerk in a Local
+        Health Center for three months. And now wanting to pursue my passion which is
+        designing and building a website.</p>
+    </section>
+    <hr>    
+    <section>
+        <h3>Experience</h3>
+        <ul class="ul-container">
+            <li>Responsible for collecting and separating important information into various
+                categories.
+            </li>
+            <li>Presenting and reporting the data collected with precise information.</li>
+            <li>Serve as a primary contact for an average 30 people per day, addressing inquiries and
+                resolving concerns.
+            </li>
+            <br>
+            <em style="float: right;">~ October - December 2022</em>
+        </ul>
+
+    </section>
+    <hr>
+
+    <section>
+        <h3>Skills</h3>
+        <ul class="ul-container">
+            <div class="ul-flex">
+                <li>Can convey ideas through written or verbal interpretation</li>
+                <li> Proficient in using Microsoft Office such as Word, Excel, and PowerPoint.</li>
+                <li>Good at analyzing and interpreting data</li>
+                <li>Great at finding and researching for the needed information.</li>
+                <li>Can build simple websites using HTML5, can also add design using CSS3</li>
+                <li>Can use the basics of C++ such as logical operation, loops, and function.</li>
+            </div>
+        </ul>
+    </section>
+    <hr>
+    <section>
+        <h3>Education</h3>
+        <h4>College Graduate</h4>
+        <p>Bulacan State University, Malolos</p>
+        <p>2018-2022</p>
+        <p><em>Course:</em> Bachelor of Science in Mathematics with Specialization in Computer Science</p>
+        <h4>Senior High</h4>
+        <p>STI Santa Maria</p>
+        <p>2016-2018</p>
+        <p><em>Strand:</em> Science, Technology, Engineering, Mathematics</p>
+    </section>
+</fieldset>
+</body>
+</html>
